@@ -17,8 +17,11 @@ All arrays or lists will always have at least one element, so you don't need to 
 Also, your function will always get an array or a list, you don't have to check for null, undefined or similar.
 */
 
-const minMax = (arr) => {
-  let min = Math.min(...arr);
-  let max = Math.max(...arr);
-  return [min, max];
+const isSquare = (n) => {
+  for (let i = 0; i < n / 2 + 2; i++) {
+    if (i * i == n) {
+      return true;
+    }
+  }
+  return false;
 };
